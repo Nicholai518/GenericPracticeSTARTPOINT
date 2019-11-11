@@ -16,7 +16,7 @@ public class TestPoint {
 		
 		
 		// Create a Point oject that can hold Doubles
-		Point<Double> dPoint = new Point<Double>(dblX, dblY);
+		Point<Double, Double> dPoint = new Point<Double, Double>(dblX, dblY);
 		
 		//COULD HAVE BEEN WRITTEN LIKE THIS
 		// Point<Double> dPoint new Point<>(1.5,2.5);
@@ -56,7 +56,8 @@ public class TestPoint {
 		
 		// Use a Double and an int
 		Point<Double, Integer> doubleIntegerPoint = new Point<Double, Integer>(dblX, intY);
-		
+		JOptionPane.showMessageDialog(null,"X Coordinate: " + doubleIntegerPoint.getX());
+		JOptionPane.showMessageDialog(null,"Y Coordinate: " + doubleIntegerPoint.getY());
 		
 
 	}
